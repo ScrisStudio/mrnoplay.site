@@ -71,7 +71,7 @@ export default {
   },
   data() {
     return {
-      lang: 'zh',
+      lang: 'cn',
     };
   },
   mounted: () => {
