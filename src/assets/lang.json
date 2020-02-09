@@ -2,11 +2,25 @@
   "cn": {
     "iwillplay": "我将休息/玩",
     "mrnoplay": "不玩家 Mr Noplay",
-    "start": "开始"
+    "start": "开始",
+    "story": {
+      "1": "你一定有过这样的经历：",
+      "2": "想着我只玩5分钟",
+      "3": "结果那个想法成了被浪费的下午的开端"
+    },
+    "youneed": "你需要",
+    "incontrol": "让时间可控"
   },
   "en": {
     "iwillplay": "I will rest/play",
     "mrnoplay": "Mr Noplay 不玩家",
-    "start": "Start"
+    "start": "Start",
+    "story": {
+      "1": "I guess you have experienced this:",
+      "2": "Thinking that I'll just play for 5 minutes",
+      "3": "But result in wasting a whole day"
+    },
+    "youneed": "You need ",
+    "incontrol": "let time in your control."
   }
 }
