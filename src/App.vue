@@ -98,13 +98,13 @@ export default {
     }
   },
   methods: {
-    web() {
+    mac() {
       window.open("https://github.com/scris/mrnoplay/releases/", "_blank"); 
     },
     win() {
       window.open("https://github.com/scris/mrnoplay/releases/", "_blank"); 
     },
-    mac() {
+    web() {
       window.open("https://webmrnoplay.scris.top/", "_blank"); 
     },
     cn() {
