@@ -6,7 +6,9 @@
     "story": {
       "1": "你一定有过这样的经历：",
       "2": "想着我只玩5分钟",
-      "3": "结果那个想法成了被浪费的下午的开端"
+      "3": "结果那个想法成了被浪费的下午的开端",
+      "4": "你有足够好的效率工具让你专心工作",
+      "5": "但没有工具保证不因过度娱乐使计划破产"
     },
     "youneed": "你需要",
     "incontrol": "让时间可控"
@@ -18,7 +20,9 @@
     "story": {
       "1": "I guess you have experienced this:",
       "2": "Thinking that I'll just play for 5 minutes",
-      "3": "But result in wasting a whole day"
+      "3": "But result in wasting a whole day",
+      "4": "Tool can already keep you focused on work",
+      "5": "But over-playing can also make plans broken"
     },
     "youneed": "You need ",
     "incontrol": "let time in your control."

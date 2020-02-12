@@ -29,9 +29,8 @@
         <div class="nametop" v-if="lang == 'cn'">不玩家</div>
         <div>Mr Noplay</div>
       </div>
-      <div class="story">{{ $t("story.1") }}</div>
-      <div class="story">{{ $t("story.2") }}</div>
-      <div class="story">{{ $t("story.3") }}</div>
+      <div class="story">{{ $t("story.4") }}</div>
+      <div class="story">{{ $t("story.5") }}</div>
       <div class="so">
         {{ $t('youneed') }}
         <span class="name-small">Mr Noplay</span>,
@@ -67,7 +66,7 @@
   </div>
   <!-- 
         qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890`-=[]\;',./~_+{}|:"<>?·-=【】、；‘，。/～——+「」｜：“《》？不玩家你一定有过这样的经历想着我只玩分钟结果那个想法成了被浪费的下午的开端
-你需要让时间可控中文下载
+你需要让时间可控中文下载足够好效率工具专心工作但没保证因度娱乐使计划破产
   -->
 </template>
 

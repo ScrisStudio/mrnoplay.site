@@ -8,34 +8,34 @@ html {
 @font-face {
   font-family: 'light';
   font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_apt6gmhbp7r.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_apt6gmhbp7r.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_apt6gmhbp7r.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_apt6gmhbp7r.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_apt6gmhbp7r.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_apt6gmhbp7r.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/webfont_oqblz7mn40a.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_oqblz7mn40a.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_oqblz7mn40a.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_oqblz7mn40a.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_oqblz7mn40a.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_oqblz7mn40a.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
 }
 
 @font-face {
   font-family: 'bold';
   font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_4gqyikw86b2.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_4gqyikw86b2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_4gqyikw86b2.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_4gqyikw86b2.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_4gqyikw86b2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_4gqyikw86b2.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/webfont_vm27dcvk979.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_vm27dcvk979.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_vm27dcvk979.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_vm27dcvk979.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_vm27dcvk979.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_vm27dcvk979.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
 }
 
 @font-face {
   font-family: 'regular';
   font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_wp8aamot2l.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_wp8aamot2l.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_wp8aamot2l.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_wp8aamot2l.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_wp8aamot2l.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_wp8aamot2l.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/webfont_tbllhti74ip.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_tbllhti74ip.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_tbllhti74ip.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_tbllhti74ip.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_tbllhti74ip.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_tbllhti74ip.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
 }
 
 body {
@@ -129,6 +129,7 @@ input[type="number"] {
 }
 
 .on-btn {
+  cursor: pointer;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) , rgb(228, 228, 228, 0.4));
   background-color: #efeeee;
   border: 5px rgba(255, 255, 255, 0.2);
@@ -136,12 +137,14 @@ input[type="number"] {
 }
 
 .on-btn:hover {
+  cursor: pointer;
   background-color: #efeeee;
   border: 15px rgba(255, 255, 255, 0.2);
   box-shadow: 3px 3px 1px rgba(209, 205, 199, 0.5), -3px -3px 1px rgba(255, 255, 255, 0.5), inset 3px 3px 1px rgba(209, 205, 199, 0.5), inset -3px -3px 1px rgba(255, 255, 255, 0.5);
 }
 
 .on-btn:active {
+  cursor: pointer;
   color: #efeeee;
   background-color: rgb(186, 192, 171);
   border: 15px rgba(255, 255, 255, 0.2);
@@ -412,16 +415,19 @@ input[type="number"] {
   color: black;
   text-decoration: underline;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .tutorial-a:hover {
   color: grey;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .tutorial-a:active {
   color: lightgrey;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .tutorialboard {
@@ -572,6 +578,7 @@ input[type="number"] {
 }
 
 .langchild,.langchild:active {
+  cursor: pointer;
   color: grey;
   background: transparent;
   padding: 0 0;
@@ -582,6 +589,7 @@ input[type="number"] {
 }
 
 .langchild:hover {
+  cursor: pointer;
   color: black;
 }
 
