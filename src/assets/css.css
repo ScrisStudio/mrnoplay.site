@@ -270,7 +270,7 @@ input[type="number"] {
 
 .title {
   font-size: 1em;
-  width: 10em;
+  width: 12em;
   padding: 0.5em 0.5em;
   margin-top: 0.5em;
   font-weight: 450; 
@@ -313,6 +313,10 @@ input[type="number"] {
   padding: 0 0;
   margin: 0 0;
   text-align: center;
+}
+
+.authorname {
+  width: 7em;
 }
 
 .authorinfo {
@@ -516,7 +520,7 @@ input[type="number"] {
   background-image: url('mac.svg');
 }
 
-.web {
+.web, .web-grey:hover {
   width: 1.417em;
   height: 1.417em;
   background-size: contain;
@@ -525,7 +529,7 @@ input[type="number"] {
   background-image: url('web.svg');
 }
 
-.web-grey {
+.web-grey,.web-grey:active {
   width: 1.417em;
   height: 1.417em;
   background-size: contain;
@@ -534,7 +538,16 @@ input[type="number"] {
   background-image: url('web-grey.svg');
 }
 
-.github-grey {
+.github-grey,.github-grey:active {
+  width: 1.25em;
+  height: 1.25em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('github-grey.svg');
+}
+
+.github-grey:hover {
   width: 1.25em;
   height: 1.25em;
   background-size: contain;
@@ -558,7 +571,7 @@ input[type="number"] {
   padding-top: 0.3em;
 }
 
-.langchild {
+.langchild,.langchild:active {
   color: grey;
   background: transparent;
   padding: 0 0;
@@ -566,6 +579,10 @@ input[type="number"] {
   margin-right: 0.1em;
   border: 0;
   font-family: 'light', sans-serif;
+}
+
+.langchild:hover {
+  color: black;
 }
 
 .author {
