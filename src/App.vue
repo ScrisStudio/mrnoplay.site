@@ -1,66 +1,73 @@
 <i18n src="./assets/lang.json"></i18n>
 <template>
   <div id="app" class="container">
-    <div id="main">
-      <div class="digitalboard border">
-        <div class="juniordigitalboard on">
-          <div class="digitaltop">{{ $t("iwillplay") }}</div>
-          <div class="digitalfather">
-            <span class="digital">5</span>
-            <span class="digital digitalnote">:00</span>
+    <div id="leftpart">
+      <div id="main">
+        <div class="digitalboard border">
+          <div class="juniordigitalboard on">
+            <div class="digitaltop">{{ $t("iwillplay") }}</div>
+            <div class="digitalfather">
+              <span class="digital">5</span>
+              <span class="digital digitalnote">:00</span>
+            </div>
+          </div>
+        </div>
+        <br />
+        <button class="btn new on largebtn btn-light">
+          <div class="largebtn-innertext">{{ $t("start") }}</div>
+        </button>
+        <div class="titlepart">
+          <div class="title new left">{{ $t("mrnoplay") }}</div>
+          <div class="titlebtns">
+            <button class="new about"></button>
+            <button class="new settings"></button>
+            <button class="new exit"></button>
           </div>
         </div>
       </div>
-      <br />
-      <button class="btn new on largebtn btn-light">
-        <div class="largebtn-innertext">{{ $t("start") }}</div>
-      </button>
-      <div class="titlepart">
-        <div class="title new left">{{ $t("mrnoplay") }}</div>
-        <div class="titlebtns">
-          <button class="new about"></button>
-          <button class="new settings"></button>
-          <button class="new exit"></button>
-        </div>
-      </div>
     </div>
-    <div id="right">
-      <div class="name">
-        <div class="nametop" v-if="lang == 'cn'">不玩家</div>
-        <div>Mr Noplay</div>
-      </div>
-      <div class="story">{{ $t("story.4") }}</div>
-      <div class="story">{{ $t("story.5") }}</div>
-      <div class="so">
-        {{ $t('youneed') }}
-        <span class="name-small">Mr Noplay</span>,
-        <span class="slogan">{{ $t('incontrol') }}</span>
-      </div>
-      <div class="link">
-        <button class="btn new on-btn btn-light linkchild" @click="win">
-          <div class="largebtn-innertext windows"></div>
-        </button>
-        <button class="btn new on-btn btn-light linkchild" @click="mac">
-          <div class="largebtn-innertext mac"></div>
-        </button>
-        <button class="btn new on-btn btn-light linkchild" @click="web">
-          <div class="largebtn-innertext web"></div>
-        </button>
-      </div>
-      <div class="lang">
-        <div class="langchilds">
-          <button class="langchild" @click="cn">中文</button>&nbsp;
-          <button class="langchild" @click="en">English</button>
+    <div id="rightpart">
+      <div id="right">
+        <div class="name">
+          <div class="nametop" v-if="lang == 'cn'">不玩家</div>
+          <div>Mr Noplay</div>
         </div>
-      </div>
-      <div class="author">
-        <div class="authorname authorchild">Tianze Ds Qiu</div>
-        <button class="langchild authorchild" @click="mysite">
-          <div class="authoricon web-grey"></div>
-        </button>
-        <button class="langchild authorchild" @click="mygithub">
-          <div class="authoricon github-grey"></div>
-        </button>
+        <div class="story" v-if="!display456">{{ $t("story.1") }}</div>
+        <div class="story" v-if="!display456">{{ $t("story.2") }}</div>
+        <div class="story" v-if="!display456">{{ $t("story.3") }}</div>
+        <div class="story" v-if="display456">{{ $t("story.4") }}</div>
+        <div class="story" v-if="display456">{{ $t("story.5") }}</div>
+        <div class="so" v-if="display456">
+          {{ $t('youneed') }}
+          <span class="name-small">Mr Noplay</span>,
+          <span class="slogan">{{ $t('incontrol') }}</span>
+        </div>
+        <div class="link">
+          <button class="btn new on-btn btn-light linkchild" @click="win">
+            <div class="largebtn-innertext windows"></div>
+          </button>
+          <button class="btn new on-btn btn-light linkchild" @click="mac">
+            <div class="largebtn-innertext mac"></div>
+          </button>
+          <button class="btn new on-btn btn-light linkchild" @click="web">
+            <div class="largebtn-innertext web"></div>
+          </button>
+        </div>
+        <div class="lang">
+          <div class="langchilds">
+            <button class="langchild" @click="cn">中文</button>&nbsp;
+            <button class="langchild" @click="en">English</button>
+          </div>
+        </div>
+        <div class="author">
+          <div class="authorname authorchild">Tianze Ds Qiu</div>
+          <button class="langchild authorchild" @click="mysite">
+            <div class="authoricon web-grey"></div>
+          </button>
+          <button class="langchild authorchild" @click="mygithub">
+            <div class="authoricon github-grey"></div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -87,6 +94,7 @@ export default {
   data() {
     return {
       lang: '',
+      display456: true,
     };
   },
   mounted: function() {
@@ -95,6 +103,7 @@ export default {
     } else {
       this.lang = 'cn';
     }
+    setInterval(this.display456change, 5000);
   },
   methods: {
     mac() {
@@ -117,6 +126,9 @@ export default {
     },
     mygithub() {
       window.open("https://github.com/scris/", "_blank"); 
+    },
+    display456change() {
+      this.display456 = !this.display456;
     }
   }
 }
