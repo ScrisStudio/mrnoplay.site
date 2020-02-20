@@ -2,28 +2,11 @@
 <template>
   <div id="app" class="container">
     <div id="leftpart">
-      <div id="main">
-        <div class="digitalboard border">
-          <div class="juniordigitalboard on">
-            <div class="digitaltop">{{ $t("iwillplay") }}</div>
-            <div class="digitalfather">
-              <span class="digital">5</span>
-              <span class="digital digitalnote">:00</span>
-            </div>
-          </div>
-        </div>
-        <br />
-        <button class="btn new on largebtn btn-light">
-          <div class="largebtn-innertext">{{ $t("start") }}</div>
-        </button>
-        <div class="titlepart">
-          <div class="title new left">{{ $t("mrnoplay") }}</div>
-          <div class="titlebtns">
-            <button class="new about"></button>
-            <button class="new settings"></button>
-            <button class="new exit"></button>
-          </div>
-        </div>
+      <div id="leftimgs">
+        <img class="leftimg" src="@/assets/surface1.jpg" width="100%" v-if="ss_display == 1" />
+        <img class="leftimg" src="@/assets/surface2.jpg" width="100%" v-if="ss_display == 2" />
+        <img class="leftimg" src="@/assets/surface3.jpg" width="100%" v-if="ss_display == 3" />
+        <img class="leftimg" src="@/assets/surface4.jpg" width="100%" v-if="ss_display == 4" />
       </div>
     </div>
     <div id="rightpart">
@@ -70,6 +53,13 @@
         </div>
       </div>
     </div>
+    <div>
+      <div id="preload-01"></div>
+      <div id="preload-02"></div>
+      <div id="preload-03"></div>
+      <div id="preload-04"></div>
+      <div id="preload-05"></div>
+    </div>
   </div>
   <!-- 
         qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890`-=[]\;',./~_+{}|:"<>?·-=【】、；‘，。/～——+「」｜：“《》？不玩家你一定有过这样的经历想着我只玩分钟结果那个想法成了被浪费的下午的开端
@@ -79,57 +69,66 @@
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import './assets/css.css'
+import "./assets/css.css";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     //HelloWorld
   },
   watch: {
-    async lang (val) {
+    async lang(val) {
       this.$i18n.locale = val;
       localStorage.setItem("lang", val);
-    },
+    }
   },
   data() {
     return {
-      lang: '',
+      lang: "",
       display456: true,
+      ss_display: 1
     };
   },
   mounted: function() {
-    if(localStorage.getItem("lang") == 'cn' || localStorage.getItem("lang") == 'en') {
+    if (
+      localStorage.getItem("lang") == "cn" ||
+      localStorage.getItem("lang") == "en"
+    ) {
       this.lang = localStorage.getItem("lang");
     } else {
-      this.lang = 'cn';
+      this.lang = "cn";
     }
     setInterval(this.display456change, 5000);
+    setInterval(this.ss_displaychange, 5000);
   },
   methods: {
     mac() {
-      window.open("https://github.com/scris/mrnoplay/releases/", "_blank"); 
+      window.open("https://github.com/scris/mrnoplay/releases/", "_blank");
     },
     win() {
-      window.open("https://github.com/scris/mrnoplay/releases/", "_blank"); 
+      window.open("https://github.com/scris/mrnoplay/releases/", "_blank");
     },
     web() {
-      window.open("https://webmrnoplay.scris.top/", "_blank"); 
+      window.open("https://webmrnoplay.scris.top/", "_blank");
     },
     cn() {
-      this.lang = 'cn';
+      this.lang = "cn";
     },
     en() {
-      this.lang = 'en';
+      this.lang = "en";
     },
     mysite() {
-      window.open("https://ds.scris.top", "_blank"); 
+      window.open("https://ds.scris.top", "_blank");
     },
     mygithub() {
-      window.open("https://github.com/scris/", "_blank"); 
+      window.open("https://github.com/scris/", "_blank");
     },
     display456change() {
       this.display456 = !this.display456;
+    },
+    ss_displaychange() {
+      if (this.ss_display == 4) this.ss_display = 1;
+      else this.ss_display++;
     }
   }
-}
+};
 </script>
