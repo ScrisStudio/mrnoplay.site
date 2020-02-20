@@ -681,7 +681,10 @@ input[type="number"] {
     flex-direction: row;
   }
   #rightpart {
+    display: auto;
+
     width: auto;
+    height: auto;
   }
   #leftpart {
     display: flex;
@@ -689,6 +692,7 @@ input[type="number"] {
     align-items: center;
     flex-direction: row;
     width: 120vw;
+    height: auto;
   }
   #leftimgs {
     width: 118vw;
