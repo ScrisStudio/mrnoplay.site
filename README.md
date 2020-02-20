@@ -1,29 +1,15 @@
-# The Site for Mr Noplay（不玩家）
+![Mrnoplay Repo Banner](https://i.loli.net/2020/01/17/MgyzH1qCa3QwVZ6.png)
 
-## Project setup
-```
-yarn install
-```
+### What is it
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+The website for Mr Noplay.
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+### License
 
-### Run your tests
-```
-yarn run test
-```
+MPL v2.0 for the software,
+CC BY 4.0 for the website.
 
-### Lints and fixes files
-```
-yarn run lint
-```
+### Languages
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 简体中文
+- English

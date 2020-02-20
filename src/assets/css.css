@@ -10,7 +10,7 @@ html {
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  width: 45vw;
+  width: 50vw;
   height: 100vh;
 }
 
@@ -24,7 +24,7 @@ html {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  width: 45vw;
+  width: 50vw;
   height: 100vh;
 }
 
@@ -342,7 +342,7 @@ input[type="number"] {
 }
 
 .authorname {
-  width: 7em;
+  width: 8em;
 }
 
 .authorinfo {
@@ -514,7 +514,8 @@ input[type="number"] {
 .story {
   font-size: 0.8em;
   color: gray;
-  font-family: "light", sans-serif
+  font-family: "light", sans-serif;
+  width: 50vw;
 }
 
 .so {
@@ -694,6 +695,9 @@ input[type="number"] {
   }
   .leftimg {
     box-shadow: -0.2em 0 2em 0.2em #2c2929;
+  }
+  .story {
+    width: auto;
   }
 }
 
