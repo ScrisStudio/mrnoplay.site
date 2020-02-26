@@ -640,6 +640,11 @@ input[type="number"] {
   color: rgb(132, 136, 121);
 }
 
+.leftimg {
+  border-radius: 0.4em;
+  box-shadow: 0em 0 2em 0.1em #e2e0e0;
+}
+
 @media screen and (max-width: 941px) {
   html {
     font-size: 16px;
@@ -698,27 +703,11 @@ input[type="number"] {
     width: 118vw;
   }
   .leftimg {
-    box-shadow: -0.2em 0 2em 0.2em #2c2929;
+    box-shadow: -0.2em 0 2em 0.2em #e2e0e0;
   }
   .story {
     width: auto;
   }
-}
-
-#preload-01 {
-  background: url('surface1.jpg') no-repeat -9999px -9999px;
-}
-
-#preload-02 {
-  background: url('surface2.jpg') no-repeat -9999px -9999px;
-}
-
-#preload-03 {
-  background: url('surface3.jpg') no-repeat -9999px -9999px;
-}
-
-#preload-04 {
-  background: url('surface4.jpg') no-repeat -9999px -9999px;
 }
 
 #preload-05 {

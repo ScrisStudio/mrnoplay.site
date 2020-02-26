@@ -3,10 +3,7 @@
   <div id="app" class="container">
     <div id="leftpart">
       <div id="leftimgs">
-        <img class="leftimg" src="@/assets/surface1.jpg" width="100%" v-if="ss_display == 1" />
-        <img class="leftimg" src="@/assets/surface2.jpg" width="100%" v-if="ss_display == 2" />
-        <img class="leftimg" src="@/assets/surface3.jpg" width="100%" v-if="ss_display == 3" />
-        <img class="leftimg" src="@/assets/surface4.jpg" width="100%" v-if="ss_display == 4" />
+        <img class="leftimg" src="@/assets/mrnoplay.gif" width="100%"/>
       </div>
     </div>
     <div id="rightpart">
@@ -125,10 +122,6 @@ export default {
     display456change() {
       this.display456 = !this.display456;
     },
-    ss_displaychange() {
-      if (this.ss_display == 4) this.ss_display = 1;
-      else this.ss_display++;
-    }
   }
 };
 </script>
