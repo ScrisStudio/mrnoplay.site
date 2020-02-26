@@ -3,7 +3,8 @@
   <div id="app" class="container">
     <div id="leftpart">
       <div id="leftimgs">
-        <img class="leftimg" src="@/assets/mrnoplay.gif" width="100%"/>
+        <img class="leftimg" src="@/assets/mrnoplay-cn.gif" width="100%" v-if="lang == 'cn'"/>
+        <img class="leftimg" src="@/assets/mrnoplay-en.gif" width="100%" v-if="lang != 'cn'"/>
       </div>
     </div>
     <div id="rightpart">
@@ -51,11 +52,9 @@
       </div>
     </div>
     <div>
-      <div id="preload-01"></div>
-      <div id="preload-02"></div>
-      <div id="preload-03"></div>
-      <div id="preload-04"></div>
-      <div id="preload-05"></div>
+    <div id="preload-05"></div>
+    <div id="preload-06"></div>
+    <div id="preload-07"></div>
     </div>
   </div>
   <!-- 

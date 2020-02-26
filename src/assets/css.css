@@ -641,7 +641,7 @@ input[type="number"] {
 }
 
 .leftimg {
-  border-radius: 0.4em;
+  border-radius: 0.7em;
   box-shadow: 0em 0 2em 0.1em #e2e0e0;
 }
 
@@ -712,4 +712,10 @@ input[type="number"] {
 
 #preload-05 {
   background: url('github.svg') no-repeat -9999px -9999px;
+}
+#preload-06 {
+  background: url('mrnoplay-en.gif') no-repeat -9999px -9999px;
+}
+#preload-07 {
+  background: url('mrnoplay-cn.gif') no-repeat -9999px -9999px;
 }
