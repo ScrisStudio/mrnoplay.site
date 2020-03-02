@@ -24,13 +24,13 @@
           <span class="slogan">{{ $t('incontrol') }}</span>
         </div>
         <div class="link">
-          <button class="btn new on-btn btn-light linkchild" @click="win">
+          <button class="btn new on-btn btn-light linkchild" id="win" @click="win">
             <div class="largebtn-innertext windows"></div>
           </button>
-          <button class="btn new on-btn btn-light linkchild" @click="mac">
+          <button class="btn new on-btn btn-light linkchild" id="mac" @click="mac">
             <div class="largebtn-innertext mac"></div>
           </button>
-          <button class="btn new on-btn btn-light linkchild" @click="web">
+          <button class="btn new on-btn btn-light linkchild" id="web" @click="web">
             <div class="largebtn-innertext web"></div>
           </button>
         </div>
@@ -98,12 +98,15 @@ export default {
   },
   methods: {
     mac() {
+      _czc.push(["_trackEvent", '下载', '下载', 'mac', '1', 'mac']);
       window.open("https://github.com/scris/mrnoplay/releases/", "_blank");
     },
     win() {
+      _czc.push(["_trackEvent", '下载', '下载', 'win', '1', 'win']);
       window.open("https://github.com/scris/mrnoplay/releases/", "_blank");
     },
     web() {
+      _czc.push(["_trackEvent", '下载', '在线', 'web', '1', 'web']);
       window.open("https://webmrnoplay.scris.top/", "_blank");
     },
     cn() {
