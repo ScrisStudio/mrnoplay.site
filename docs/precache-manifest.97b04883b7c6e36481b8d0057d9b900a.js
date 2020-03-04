@@ -4,8 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CNAME"
   },
   {
-    "revision": "ce6a1e59541696ad6122",
-    "url": "/css/app.c32aa190.css"
+    "revision": "4bc5ab7483163324fb0623191d60d5fd",
+    "url": "/baidu_verify_pJ5yJQgmay.html"
+  },
+  {
+    "revision": "72fcdf8efa98488dc9c8",
+    "url": "/css/app.728f2eba.css"
   },
   {
     "revision": "eb84d203985d32d1e3bd8b93e96ccf83",
@@ -56,12 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/windows.6eaf9ac8.svg"
   },
   {
-    "revision": "fde7bf726497e8c7d05cb3f3713addd4",
+    "revision": "34daece196de9c7018018d92ecf0dd4e",
     "url": "/index.html"
   },
   {
-    "revision": "ce6a1e59541696ad6122",
-    "url": "/js/app.f1475056.js"
+    "revision": "72fcdf8efa98488dc9c8",
+    "url": "/js/app.508a196b.js"
   },
   {
     "revision": "5591fdbe4a8abf03f4bc",

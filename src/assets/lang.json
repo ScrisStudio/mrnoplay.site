@@ -11,7 +11,8 @@
       "5": "但没有工具保证不因过度娱乐使计划破产"
     },
     "youneed": "你需要",
-    "incontrol": "让时间可控"
+    "incontrol": "让时间可控",
+    "web": "网页版（仅有部分功能）"
   },
   "en": {
     "iwillplay": "I will rest/play",
@@ -25,6 +26,7 @@
       "5": "But over-playing can also make plans broken"
     },
     "youneed": "You need ",
-    "incontrol": "let time in your control."
+    "incontrol": "let time in your control.",
+    "web": "Web Version (with limited functions)"
   }
 }

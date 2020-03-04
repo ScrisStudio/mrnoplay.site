@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.443974dd1c86526e7d130db3b2f3bfb0.js"
+  "/precache-manifest.97b04883b7c6e36481b8d0057d9b900a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "mrnoplay.site"});

@@ -3,8 +3,8 @@
   <div id="app" class="container">
     <div id="leftpart">
       <div id="leftimgs">
-        <img class="leftimg" src="@/assets/mrnoplay-cn.gif" width="100%" v-if="lang == 'cn'"/>
-        <img class="leftimg" src="@/assets/mrnoplay-en.gif" width="100%" v-if="lang != 'cn'"/>
+        <img class="leftimg" src="@/assets/mrnoplay-cn.gif" width="100%" v-if="lang == 'cn'" />
+        <img class="leftimg" src="@/assets/mrnoplay-en.gif" width="100%" v-if="lang != 'cn'" />
       </div>
     </div>
     <div id="rightpart">
@@ -23,15 +23,20 @@
           <span class="name-small">Mr Noplay</span>,
           <span class="slogan">{{ $t('incontrol') }}</span>
         </div>
+        <div class="lang otherdownloads">
+          <div class="langchilds">
+            <button class="langchild" @click="lanzou" id="lanzou" v-if="this.lang == 'cn'">
+              <b>蓝奏云直链（密码：3n6k）</b>
+            </button>&nbsp;
+            <button class="langchild" id="web" @click="web">{{ $t('web') }}</button>
+          </div>
+        </div>
         <div class="link">
           <button class="btn new on-btn btn-light linkchild" id="win" @click="win">
             <div class="largebtn-innertext windows"></div>
           </button>
           <button class="btn new on-btn btn-light linkchild" id="mac" @click="mac">
             <div class="largebtn-innertext mac"></div>
-          </button>
-          <button class="btn new on-btn btn-light linkchild" id="web" @click="web">
-            <div class="largebtn-innertext web"></div>
           </button>
         </div>
         <div class="lang">
@@ -52,14 +57,14 @@
       </div>
     </div>
     <div>
-    <div id="preload-05"></div>
-    <div id="preload-06"></div>
-    <div id="preload-07"></div>
+      <div id="preload-05"></div>
+      <div id="preload-06"></div>
+      <div id="preload-07"></div>
     </div>
   </div>
   <!-- 
-        qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890`-=[]\;',./~_+{}|:"<>?·-=【】、；‘，。/～——+「」｜：“《》？不玩家你一定有过这样的经历想着我只玩分钟结果那个想法成了被浪费的下午的开端
-你需要让时间可控中文下载足够好效率工具专心工作但没保证因度娱乐使计划破产
+        qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890`-=[]\;',./~_+{}|:"<>?·-=【】、；‘，。/～——+「」｜：“《》？()（）不玩家你一定有过这样的经历想着我只玩分钟结果那个想法成了被浪费的下午的开端
+你需要让时间可控中文下载足够好效率工具专心工作但没保证因度娱乐使计划破产蓝奏云直链密码网页版仅部功能
   -->
 </template>
 
@@ -98,16 +103,20 @@ export default {
   },
   methods: {
     mac() {
-      _czc.push(["_trackEvent", '下载', '下载', 'mac', '1', 'mac']);
+      _czc.push(["_trackEvent", "下载", "下载", "mac", "1", "mac"]);
       window.open("https://github.com/scris/mrnoplay/releases/", "_blank");
     },
     win() {
-      _czc.push(["_trackEvent", '下载', '下载', 'win', '1', 'win']);
+      _czc.push(["_trackEvent", "下载", "下载", "win", "1", "win"]);
       window.open("https://github.com/scris/mrnoplay/releases/", "_blank");
     },
     web() {
-      _czc.push(["_trackEvent", '下载', '在线', 'web', '1', 'web']);
+      _czc.push(["_trackEvent", "下载", "在线", "web", "1", "web"]);
       window.open("https://webmrnoplay.scris.top/", "_blank");
+    },
+    lanzou() {
+      _czc.push(["_trackEvent", "下载", "下载", "lanzou", "1", "lanzou"]);
+      window.open("https://www.lanzous.com/b01n0vl3a", "_blank");
     },
     cn() {
       this.lang = "cn";
@@ -123,7 +132,7 @@ export default {
     },
     display456change() {
       this.display456 = !this.display456;
-    },
+    }
   }
 };
 </script>

@@ -31,34 +31,34 @@ html {
 @font-face {
   font-family: 'light';
   font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_oqblz7mn40a.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_oqblz7mn40a.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_oqblz7mn40a.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_oqblz7mn40a.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_oqblz7mn40a.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_oqblz7mn40a.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
 }
 
 @font-face {
   font-family: 'bold';
   font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_vm27dcvk979.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_vm27dcvk979.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_vm27dcvk979.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_vm27dcvk979.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_vm27dcvk979.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_vm27dcvk979.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/webfont_9zssru4lg2.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_9zssru4lg2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_9zssru4lg2.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_9zssru4lg2.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_9zssru4lg2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_9zssru4lg2.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
 }
 
 @font-face {
   font-family: 'regular';
   font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_tbllhti74ip.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_tbllhti74ip.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_tbllhti74ip.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_tbllhti74ip.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_tbllhti74ip.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_tbllhti74ip.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/webfont_mslvlf0y9e.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_mslvlf0y9e.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_mslvlf0y9e.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_mslvlf0y9e.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_mslvlf0y9e.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_mslvlf0y9e.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
 }
 
 body {
@@ -598,7 +598,14 @@ input[type="number"] {
 }
 
 .lang {
-  padding-top: 0.3em;
+  height: 0.5em;
+  padding-bottom: 0.2em;
+  padding-top: 0.4em;
+  transform: translateY(-0.5em);
+}
+
+.langchilds {
+  height: 0.5em;
 }
 
 .langchild,.langchild:active {
@@ -610,6 +617,10 @@ input[type="number"] {
   margin-right: 0.1em;
   border: 0;
   font-family: 'light', sans-serif;
+}
+
+.otherdownloads {
+  padding-top: 0;
 }
 
 .langchild:hover {
@@ -723,4 +734,9 @@ input[type="number"] {
 body a {
   color: #ffffff;
   font-size: 1px;
+}
+
+b {
+  font-weight: 200;
+  font-family: "bold";
 }
