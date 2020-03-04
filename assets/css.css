@@ -30,35 +30,32 @@ html {
 
 @font-face {
   font-family: 'light';
-  font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_w3fy0pnuj1g.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+  src: url('https://at.alicdn.com/t/webfont_w3fy0pnuj1g.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_w3fy0pnuj1g.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_w3fy0pnuj1g.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_w3fy0pnuj1g.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_w3fy0pnuj1g.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_w3fy0pnuj1g.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
 }
 
 @font-face {
   font-family: 'bold';
-  font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_9zssru4lg2.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_9zssru4lg2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_9zssru4lg2.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_9zssru4lg2.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_9zssru4lg2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_9zssru4lg2.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
+  src: url('https://at.alicdn.com/t/webfont_9zssru4lg2.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_9zssru4lg2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_9zssru4lg2.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_9zssru4lg2.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_9zssru4lg2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_9zssru4lg2.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
 }
 
 @font-face {
   font-family: 'regular';
-  font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_mslvlf0y9e.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_mslvlf0y9e.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_mslvlf0y9e.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_mslvlf0y9e.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_mslvlf0y9e.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_mslvlf0y9e.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
+  src: url('https://at.alicdn.com/t/webfont_mslvlf0y9e.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_mslvlf0y9e.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_mslvlf0y9e.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_mslvlf0y9e.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_mslvlf0y9e.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_mslvlf0y9e.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
 }
 
 body {
@@ -378,7 +375,7 @@ input[type="number"] {
   background-color: transparent;
   margin-top: 1em;
   margin-left: 0.2em;
-  background-image: url('about.svg');
+  background-image: url('https://i.loli.net/2020/03/04/tXaRyzISBNgMdKe.png');
 }
 
 .settings {
@@ -389,7 +386,7 @@ input[type="number"] {
   background-color: transparent;
   margin-top: 1.02em;
   margin-left: 0.2em;
-  background-image: url('settings.svg');
+  background-image: url('https://i.loli.net/2020/03/04/ANzdLXfoshPguFT.png');
 }
 
 .exit {
@@ -400,7 +397,7 @@ input[type="number"] {
   background-color: transparent;
   margin-top: 1.06em;
   margin-left: 0.2em;
-  background-image: url('exit.svg');
+  background-image: url('https://i.loli.net/2020/03/04/JjwoypSVamLAdhY.png');
 }
 
 .breathe-div {
@@ -538,7 +535,7 @@ input[type="number"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url('windows.svg');
+  background-image: url('https://i.loli.net/2020/03/04/JgIpnVRqAQ42zTL.png');
 }
 
 .mac {
@@ -547,7 +544,7 @@ input[type="number"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url('mac.svg');
+  background-image: url('https://i.loli.net/2020/03/04/zHNEob9OgtAdePL.png');
 }
 
 .web, .web-grey:hover {
@@ -556,7 +553,7 @@ input[type="number"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url('web.svg');
+  background-image: url('https://i.loli.net/2020/03/04/AOg2RtFVGBKuIyv.png');
 }
 
 .web-grey,.web-grey:active {
@@ -565,7 +562,7 @@ input[type="number"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url('web-grey.svg');
+  background-image: url('https://i.loli.net/2020/03/04/R43SCUcAJpQM5bn.png');
 }
 
 .github-grey,.github-grey:active {
@@ -574,7 +571,7 @@ input[type="number"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url('github-grey.svg');
+  background-image: url('https://i.loli.net/2020/03/04/WJks1HXNqtMPjn5.png');
 }
 
 .github-grey:hover {
@@ -583,7 +580,7 @@ input[type="number"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url('github.svg');
+  background-image: url('https://i.loli.net/2020/03/04/MsmcgS9za2Q1rdO.png');
 }
 
 .link {
@@ -730,8 +727,11 @@ input[type="number"] {
   }
 }
 
+#preload-04 {
+  background: url('https://i.loli.net/2020/03/04/AOg2RtFVGBKuIyv.png') no-repeat -9999px -9999px;
+}
 #preload-05 {
-  background: url('github.svg') no-repeat -9999px -9999px;
+  background: url('https://i.loli.net/2020/03/04/MsmcgS9za2Q1rdO.png') no-repeat -9999px -9999px;
 }
 #preload-06 {
   background: url('mrnoplay-en.gif') no-repeat -9999px -9999px;
@@ -748,4 +748,8 @@ body a {
 b {
   font-weight: 200;
   font-family: "bold";
+}
+
+.iealwn-browser_chrome, .iealwn-browser_edge, .iealwn-browser_ie2345, .iealwn-browser_se360, .iealwn-browser_qqbrowser {
+  display: none;
 }
