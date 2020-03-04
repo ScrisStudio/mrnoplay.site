@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/baidu_verify_pJ5yJQgmay.html"
   },
   {
-    "revision": "72fcdf8efa98488dc9c8",
-    "url": "/css/app.728f2eba.css"
+    "revision": "1cb8309f2a47a574a592",
+    "url": "/css/app.086ab9b4.css"
   },
   {
     "revision": "eb84d203985d32d1e3bd8b93e96ccf83",
@@ -60,11 +60,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/windows.6eaf9ac8.svg"
   },
   {
-    "revision": "34daece196de9c7018018d92ecf0dd4e",
+    "revision": "e8cf99f6531c5e0a9abc62288c0f38b3",
     "url": "/index.html"
   },
   {
-    "revision": "72fcdf8efa98488dc9c8",
+    "revision": "1cb8309f2a47a574a592",
     "url": "/js/app.508a196b.js"
   },
   {

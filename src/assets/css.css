@@ -609,6 +609,7 @@ input[type="number"] {
 }
 
 .langchild,.langchild:active {
+  font-size: 0.6em;
   cursor: pointer;
   color: grey;
   background: transparent;
@@ -617,6 +618,10 @@ input[type="number"] {
   margin-right: 0.1em;
   border: 0;
   font-family: 'light', sans-serif;
+}
+
+.langchild {
+  text-decoration: underline 0.0001em;
 }
 
 .otherdownloads {
@@ -718,6 +723,10 @@ input[type="number"] {
   }
   .story {
     width: auto;
+  }
+  .link {
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
   }
 }
 
