@@ -184,3 +184,8 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/* make tongji(analysis) unvisible */
+a {
+  visibility: hidden;
+}
