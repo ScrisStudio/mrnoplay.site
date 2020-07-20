@@ -5,88 +5,52 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="你有足够好的效率工具让你专心工作，但没有工具保证不因过度娱乐使计划破产，你需要 Mr Noplay 让时间可控。支持 Windows 和 macOS。现在下载 Mr Noplay！">
+  <meta name="description"
+    content="你有足够好的效率工具让你专心工作，但没有工具保证不因过度娱乐使计划破产，你需要 Mr Noplay 让时间可控。支持 Windows 和 macOS。现在下载 Mr Noplay！">
   <link rel="icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./assets/css.css">
   <title>Mr Noplay - 再不会在电脑面前停不下来</title>
-  <link href="./assets/css.css" rel="stylesheet" />
 </head>
 
 <body>
   <div id="app" class="container">
-    <div id="leftpart">
-      <div id="leftimgs">
-        <img class="leftimg" src="https://i.loli.net/2020/03/04/TaiOwj8mBfK9INx.gif" width="100%"/>
+    <div class="logo">
+      <img src="./assets/logo.png" class="logoimg" />
+    </div>
+    <div class="chinesetitle">不玩家</div>
+    <div class="title">Mr Noplay</div>
+    <div class="description">
+      再不会在电脑面前停不下来
+    </div>
+    <div class="download">
+      <button class="btn" onclick="universal()">下载 Mr Noplay</button>
+      <div class="download-desc">
+        支持 Windows 7+ 和 macOS
       </div>
     </div>
-    <div id="rightpart">
-      <div id="right">
-        <div class="name">
-          <div class="nametop">不玩家</div>
-          <div>Mr Noplay</div>
-        </div>
-        <div class="story 1">你一定有过这样的经历：</div>
-        <div class="story 2">想着我只玩5分钟</div>
-        <div class="story 3">结果那个想法成了被浪费的下午的开端</div>
-        <div class="story 4" style="display: none">你有足够好的效率工具让你专心工作</div>
-        <div class="story 5" style="display: none">但没有工具保证不因过度娱乐使计划破产</div>
-        <div class="so 6" style="display: none">
-          你需要
-          <span class="name-small">Mr Noplay</span>,
-          <span class="slogan">让时间可控</span>
-        </div>
-        <div class="lang otherdownloads">
-          <div class="langchilds">
-            <button class="langchild" onclick="lanzou()" id="lanzou" v-if="this.lang == 'cn'">
-              <b>蓝奏云直链（密码：3n6k）</b>
-            </button>&nbsp;
-            <button class="langchild" id="web" onclick="web()">网页版（仅有部分功能）</button>
-          </div>
-        </div>
-        <div class="link">
-          <button class="btn new on-btn btn-light linkchild" id="win" onclick="win()">
-            <div class="largebtn-innertext windows"></div>
-          </button>
-          <button class="btn new on-btn btn-light linkchild" id="mac" onclick="mac()">
-            <div class="largebtn-innertext mac"></div>
-          </button>
-        </div>
-        <div class="lang">
-          <div class="langchilds">
-            <button class="langchild" onclick="cn()">中文</button>&nbsp;
-            <button class="langchild" onclick="en()">English</button>
-          </div>
-        </div>
-        <div class="author">
-          <div class="authorname authorchild">Tianze Ds Qiu</div>
-          <button class="langchild authorchild" onclick="mysite()">
-            <div class="authoricon web-grey"></div>
-          </button>
-          <button class="langchild authorchild" onclick="mygithub()">
-            <div class="authoricon github-grey"></div>
-          </button>
-        </div>
-      </div>
+    <div class="setlang">
+      <div class="setlangtext"><button class="btnlang" onclick="en()">English</button></div>
+      <div class="setlang-desc">&nbsp;|&nbsp;</div>
+      <div class="setlangtext"><button class="btnlang" onclick="cn()">中文</button></div>
     </div>
-    <div>
-      <div id="preload-04"></div>
-      <div id="preload-05"></div>
-      <div id="preload-06"></div>
-      <div id="preload-07"></div>
+    <div class="moredownload setlang">
+      <div class="setlangtext"><button class="btnlang" onclick="lanzou()">蓝奏云极速下载</button>&nbsp;(密码:3n6k)</div>
     </div>
-  </div>
-  <!-- 
-          qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890`-=[]\;',./~_+{}|:"<>?·-=【】、；‘，。/～——+「」｜：“《》？()（）不玩家你一定有过这样的经历想着我只玩分钟结果那个想法成了被浪费的下午的开端
-  你需要让时间可控中文下载足够好效率工具专心工作但没保证因度娱乐使计划破产蓝奏云直链密码网页版仅部功能
-    -->
-  <script>
-  if (localStorage.getItem("lang") == 'en') location.href = "en.html";
-  </script>
-  <script type="text/javascript" src="js.js"></script>
-  <script type="text/javascript" src="baidu.js"></script>
-  <script>
-    /*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/
-  </script>
-  <script type="text/javascript" src="cnzz.js"></script>
+    <div class="moredownload setlang">
+      <div class="setlangtext"><button class="btnlang" onclick="web()">在线版</button>&nbsp;(仅包含部分功能)</div>
+    </div>
+    <div class="moreinfo download">
+      <button class="btn btnmore" onclick="more_cn()">更多</button>
+    </div>
+    <script>
+      if (localStorage.getItem("lang") == 'en') location.href = "en.html";
+    </script>
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript" src="baidu.js"></script>
+    <script>
+      /*@cc_on document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); @*/
+    </script>
+    <script type="text/javascript" src="cnzz.js"></script>
 </body>
 
 </html>

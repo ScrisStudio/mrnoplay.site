@@ -1,4 +1,5 @@
-![Mrnoplay Repo Banner](https://i.loli.net/2020/01/17/MgyzH1qCa3QwVZ6.png)
+
+![Mr Noplay Repo Banner](https://i.loli.net/2020/07/19/viJW7YmhRUwxdIF.png)
 
 ### What is it
 
