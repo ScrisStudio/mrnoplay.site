@@ -50,6 +50,10 @@ function mygithub() {
   window.open("https://github.com/scris/", "_blank");
 }
 
+function mrgithub() {
+  window.open("https://github.com/scris/mrnoplay", "_blank");
+}
+
 function more_cn() {
   location.href = "more.html";
 }
